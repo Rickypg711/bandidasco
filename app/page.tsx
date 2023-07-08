@@ -4,17 +4,11 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function page() {
   return (
-    <div className="text-center text-custom-red text-7xl">
-      <h1 className="">BandidasCo</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-custom-pink">
+      <h1 className="mb-2 text-6xl font-bold text-custom-red">BandidasCo</h1>
 
-      <div className="flex justify-center space-x-4 mt-4">
-        <FaFacebook className="icon" />
-        <FaInstagram className="icon" />
-        <FaTiktok className="icon" />
-      </div>
-      <section>
-        {/* <h2>About</h2> */}
-        <p className="text-lg">
+      <section className="mb-8 px-4">
+        <p className="text-base font-medium text-custom-red text-center">
           Welcome to BandidasCo, the rebel of snack carts! We&apos;re not just
           any snack cart - we&apos;re the cool blast on a hot day, the
           unexpected twist at your events. We serve up frosty ice creams and
@@ -24,52 +18,27 @@ export default function page() {
           treats!
         </p>
       </section>
-      <section>
+      <div className="flex justify-center space-x-8 mb-8">
+        <FaFacebook className="icon text-3xl" />
+        <FaInstagram className="icon text-3xl" />
+        <FaTiktok className="icon text-3xl" />
+      </div>
+
+      <section className="mb-8">
         <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLSdG8ncqlPJJxMad-Yh9thbbzpof26r9ElUIoSt7VkQT-8SAMg/viewform?pli=1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="px-8 py-2 bg-custom-green text-white rounded-full transition duration-500 ease-in-out  hover:ring-4 hover:ring-yellow-500 focus:outline-none">
+          <button className="px-8 py-2 text-2xl font-bold text-white bg-custom-green shadow-lg transition duration-500 ease-in-out transform hover:scale-105 hover:ring-4 hover:ring-yellow-500 focus:outline-none">
             Join the Snack Revolution
           </button>
         </Link>
       </section>
 
-      {/* <section>
-        <h2>Contact</h2>
-        <form className="w-full max-w-lg mx-auto">
-          <label className="block mb-2">
-            Name:
-            <input
-              type="text"
-              name="name"
-              className="w-full border border-gray-400 rounded px-2 py-1"
-            />
-          </label>
-          <label className="block mb-2">
-            Email:
-            <input
-              type="text"
-              name="email"
-              className="w-full border border-gray-400 rounded px-2 py-1"
-            />
-          </label>
-          <label className="block mb-2">
-            Message:
-            <textarea
-              name="message"
-              className="w-full border border-gray-400 rounded px-2 py-1"
-            />
-          </label>
-          <input
-            type="submit"
-            value="Submit"
-            className="bg-custom-red text-white rounded px-4 py-2 mt-4"
-          />
-        </form>
-      </section> */}
-      <span className="text-black">DEPOSITS ARE NOT REFUNDABLE</span>
+      <footer className="mt-auto pb-2 text-center text-black text-sm">
+        DEPOSITS ARE NOT REFUNDABLE
+      </footer>
     </div>
   );
 }
