@@ -15,12 +15,13 @@ export default function page() {
       <section>
         {/* <h2>About</h2> */}
         <p className="text-lg">
-          Welcome to BandidasCo, the rebel of snack carts! We're not just any
-          snack cart - we're the cool blast on a hot day, the unexpected twist
-          at your events. We serve up frosty ice creams and fiery elotes,
-          pushing the envelope of taste and excitement. Dare to invite us to
-          your parties and events, and we promise to kick the flavor up a notch,
-          lighting up faces with our irresistible, audacious treats!
+          Welcome to BandidasCo, the rebel of snack carts! We&apos;re not just
+          any snack cart - we&apos;re the cool blast on a hot day, the
+          unexpected twist at your events. We serve up frosty ice creams and
+          fiery elotes, pushing the envelope of taste and excitement. Dare to
+          invite us to your parties and events, and we promise to kick the
+          flavor up a notch, lighting up faces with our irresistible, audacious
+          treats!
         </p>
       </section>
       <section>
