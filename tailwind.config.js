@@ -8,15 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-pink": "#f7b2b5",
+        "custom-pink": "#fdeeec",
         "custom-red": "#e30613",
         "custom-green": "#b1b695",
+        "custom-brown": "#c49b7d",
       },
-      backgroundImage: {
+      backgroundImage: (theme) => ({
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+        "custom-background": "url('/bandidasco.png')",
+      }),
     },
   },
   plugins: [],
